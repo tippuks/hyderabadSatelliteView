@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Satellite View Hyderabad</title>
+<link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
+<script src="https://js.arcgis.com/3.20/"></script>
+<script>
+var map;
+require([
+"esri/map",
+"dojo/domReady!"
+], function(
+Map
+) {
+map = new Map("map1", {
+center: [78.491684, 17.387140],
+zoom: 12,
+basemap: "satellite"
+});
+});
+</script>
+<style>
+html, body, #map1 {
+padding: 0;
+margin: 0;
+height: 100%;
+width: 100%;
+}
+</style>
+</head>
+<body>
+<div id="map1"></div>
+</body>
+</html>
